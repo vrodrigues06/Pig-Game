@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <script type="module" src="./assets/js/script.js" defer></script>
+  <title>Pig Game</title>
+</head>
+
+<body>
+  <main>
+    <section data-control="player-turn" id="section--0" class="player player--0  player--active">
+      <h2 class="name d-flex align-items-center gap-3" id="name--0">Player 1<span id="win-count--0" class="badge bg-danger">0</span></h2>
+      <p class="score" data-control="score" id="score--0">0</p>
+      <div class="current">
+        <p class="current-label">Current</p>
+        <p data-control="current" class="current-score" id="current--0">0</p>
+      </div>
+    </section>
+    <section data-control="player-turn" id="section--1" class="player player--1">
+      <h2 class="name d-flex align-items-center gap-3" id="name--1">Player 2<span id="win-count--1" class="badge bg-danger">0</span></h2>
+      <p class="score" data-control="score" id="score--1">0</p>
+      <div class="current">
+        <p class="current-label">Current</p>
+        <p data-control="current" class="current-score" id="current--1">0</p>
+      </div>
+    </section>
+
+    <img src="./assets/img/dice-1.png" data-control="dice-number" alt="Playing dice" class="dice" />
+    <button data-action="restart" class="btn btn--new">🔄 New game</button>
+    <button data-action="roll" class="btn btn--roll">🎲 Roll dice</button>
+    <button data-action="hold" class="btn btn--hold">📥 Hold</button>
+    <button data-action="cpu" class="btn btn--cpu">🤖 Cpu</button>
+  </main>
+
+</body>
+
+</html>
